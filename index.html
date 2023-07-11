@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body class="welcome">
+    <div class="timer-container" id="timer">Time: 0</div>
+    <section class="welcome-section" id="welcome-section">
+      <img class="logo" src="200w.gif" alt="Logo"> 
+      <p>Welcome to the ultimate JavaScript Quiz Game! Prepare for an adrenaline-pumping challenge that will put your coding prowess to the test. With a ticking countdown, you'll race against time to answer mind-boggling JavaScript questions. </p>
+      <button id="start-quiz">Start Quiz!</button> 
+      <footer>
+        <p><strong>
+          This page was coded by 
+          <a href="https://github.com/Theodorah-lab" target="_blank">Theodorah</a>
+        </strong>💖</p>
+      </footer>
+    </section>
+    <div class="quiz-container" id="quiz">
+      <div id="active-quiz">
+        <h3 class="ThreedText">JAVASCRIPT QUIZ</h3>
+        <div class="quiz-header">
+          <h2 id="question">Question text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Question</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Question</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Question</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Question</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+      <div id="quiz-result">
+      </div>
+    </div>
+    <div class="answer-status incorrect" id="answer-status">Incorrect!</div>
+    <script src="script.js"></script>
+  </body>
+</html>
