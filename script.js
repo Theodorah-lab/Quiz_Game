@@ -76,6 +76,14 @@ const quizData = [
 
     correct: "a",
   },
+  {
+    question: " Which function is used to add an element to the end of an array in JavaScript?",
+    a: "push()",
+    b: "unshift()",
+    c: "pop()",
+    d: "shift()",
+    correct: "a",
+  },
 ];
 
 const quiz = document.getElementById("quiz");
